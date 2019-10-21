@@ -1,0 +1,61 @@
+﻿/***********图片切换*******************/
+.slides{position:relative;width:960px;height:300px;overflow:hidden;border:1px solid #ccc; z-index:1;}
+.slides img{width:960px; height:300px; border-width:0px;}
+.slides .panel
+{
+    position:absolute; 
+    right:0px;
+    bottom:0px; 
+    width:960px;
+    height:50px; 
+    background-color:#000000;
+    filter:alpha(opacity=60);
+    opacity:0.6;
+    z-index:10;
+}
+.slides .info
+{
+    position:absolute; 
+    left:20px;
+    bottom:0px; 
+    width:100px;
+    height:30px;
+    color:#FFFF33; 
+    z-index:11;
+}
+.slides .ico
+{
+    position:absolute; 
+    right:20px;
+    bottom:0px;
+    height:55px;
+    z-index:12;
+}
+.slides .ico li
+{
+    background-repeat:no-repeat;
+    background-position:center center;
+    float:right;
+    display:block;
+    width:45px;
+    height:30px;
+    line-height:20px;
+    border:1px solid #cecece;
+    text-align:center;
+    margin:2px;
+    padding:1px;
+    cursor:pointer;
+    filter:alpha(opacity=50);
+    opacity:0.5;
+}
+.slides .ico li.high
+{
+    background:#F00;
+    background-repeat:no-repeat;
+    background-position:center center;
+    color:#fff;
+    font-weight:bolder;
+    filter:alpha(opacity=100);
+    opacity:1;
+}
+/***********图片切换结束***************/

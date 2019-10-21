@@ -1,0 +1,100 @@
+﻿
+
+
+*{
+    font-family:"Microsoft YaHei" !important;
+}
+
+select
+{
+    font-size: 12px;
+}
+
+body
+{
+    background-color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 0px;
+    font-family:"Microsoft YaHei" !important;
+}
+td
+{
+    font-size: 12px;
+    font-family:宋体;
+}
+input
+{
+    font-size: 12px;
+}
+p
+{
+    font-size: 12px;
+    font-family:宋体;
+}
+a
+{
+    text-decoration: none;
+    color: #333;
+}
+a:hover
+{
+    color:#039;
+}
+
+#Calendar td
+{
+    font-size: 10px;
+}
+.gvHead01
+{
+    font-weight: lighter;
+    color: #0066FF;
+    background-image: url('../images/bg_tablehead01.gif');
+    background-repeat: repeat-x;
+    height: 25px;
+}
+.Shadow
+{
+    box-shadow: 3px 3px 4px #999999;
+    -moz-box-shadow: 3px 3px 4px #999999;
+    -webkit-box-shadow: 3px 3px 4px #999999;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')";
+}
+
+.line_bottom_dotted
+{
+    border-bottom-style: dotted;
+    border-color: #999999;
+    border-width: 1px;
+}
+legend
+{
+    color: #0033CC;
+}
+.home_table_td
+{
+    border: 1px solid #C0C0C0;
+    padding: 1px;
+    background-image: url(../images/t_t_bg01.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    height: 306px;
+}
+#footLink
+{
+    color:#999;
+}
+#footLink a
+{
+    color:#999;
+}
+#footLink a:hover
+{
+    color:#69f;
+}
+
+.hidden{
+display:none;
+}
+

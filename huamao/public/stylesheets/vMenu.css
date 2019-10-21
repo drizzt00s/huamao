@@ -1,0 +1,109 @@
+﻿/******Menu common styling */
+/* style the outer div to give it width */
+.vmenu {font-size:12px; width:150px; position:relative; margin-left:10px;}
+
+/* style the links for the top level 一级菜单宽度 左右边框线会显示到子菜单的左右表格式上 */
+.vmenu a, .vmenu a:visited 
+{
+    display:block;
+    float:left;
+    height:100%; 
+    width:140px; 
+    font-size:12px;
+    text-decoration:none;
+    color:#333333; 
+    padding:0 1em 0 1em; 
+    border-top:1px solid #fff; 
+    border-bottom:1px solid #ccc;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+}
+
+/* remove all the bullets, borders and padding from the default list styling */
+.vmenu ul {padding:0; margin:0; list-style-type:none; position:relative;}
+
+/* style the sub-level lists */
+/* hide the sub levels and give them a positon absolute so that they take up no room 设置2级菜单的位置 */
+.vmenu ul ul 
+{
+    width:10em;
+    border-top: 1px solid #ccc;
+    border-right:1px solid #999;
+    border-bottom:1px solid #999;
+    visibility:hidden;
+    position:absolute;
+    margin-left:150px;
+}
+
+/* position the third level flyout menu 三级菜单位置 */
+.vmenu ul ul ul{left:100px;top:0;width:100px;}
+
+/* float the top list items to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+.vmenu ul li {float:left;height:36px;line-height:36px; display:block;}
+
+/* style the sub level list items 鼠标移上去时，二级菜单项目 */
+.vmenu ul ul li {display:block;width:12em;height:auto; line-height:36px; margin-left:-30px;}
+
+/* hack IE5.x to get the correct the faulty box model and get the width right */
+* html .vmenu a, * html .vmenu a:visited {width:5em;}
+
+/* style the sub level links 二级菜单宽度 */
+.vmenu ul ul a, .vmenu ul ul a:visited {
+    display: block;
+    color: #333;
+    width: 12em;
+    height: 100%;
+    line-height: 36px;
+    border-left:1px solid transparent;
+    border-top:1px solid transparent;
+    border-right:1px solid transparent;
+    border-bottom:1px solid #ccc;
+}
+* html .vmenu ul ul a, * html .vmenu ul ul a:visited  {width:12em; width:12em;}
+
+
+/* style the third level background 三级菜单背景 */
+.vmenu ul ul ul a, .vmenu ul ul ul a:visited { }
+/* style the fourth level background 四级菜单背景 */
+.vmenu ul ul ul ul a, .vmenu ul ul ul ul a:visited { }
+
+/* style the level hovers */
+/* first 一级菜单样式 */
+* html .vmenu a:hover {color:#ff0; position:relative; z-index:100;}
+.vmenu li:hover {position:relative;}
+.vmenu :hover > a  /* 一级菜单鼠标放上去的样子 */
+{
+    color:#003399; 
+    background-color:White; 
+    border-bottom:1px solid #999;
+    border-left:1px solid #DDD;
+    border-top:1px solid #DDD;
+    border-right:1px solid #999;
+}
+/* second */
+* html .vmenu ul ul a:hover{color:#0066FF;background:#7aa; position:relative; z-index:110;}
+.vmenu ul ul li:hover {position:relative;}
+.vmenu ul ul :hover > a  /* 二级菜单鼠标放上去的样子 */
+{
+    color:#0066FF; 
+    background-color:transparent; 
+    
+}
+/* third */
+* html .vmenu ul ul ul a:hover {background:#FFF; position:relative; z-index:120;}
+.vmenu ul ul ul :hover > a {background:#999999; color:White;}
+/* fourth */
+.vmenu ul ul ul ul a:hover {background:#7aa; position:relative; z-index:130;}
+
+/* make the second level visible when hover on first level list OR link 二级菜单UL的位置 */
+.vmenu ul :hover ul{visibility:visible; height:auto; padding:0 3em 3em 3em; background-position:right bottom; background-repeat:no-repeat; background-color:White; left:0em;}
+/* keep the third level hidden when you hover on first level list OR link */
+.vmenu ul :hover ul ul{visibility:hidden;}
+/* keep the fourth level hidden when you hover on second level list OR link */
+.vmenu ul :hover ul :hover ul ul{visibility:hidden;}
+/* make the third level visible when you hover over second level list OR link */
+.vmenu ul :hover ul :hover ul{visibility:visible; }
+/* make the fourth level visible when you hover over third level list OR link */
+.vmenu ul :hover ul :hover ul :hover ul {visibility:visible;}
+
+/********* Menu End *******************/
