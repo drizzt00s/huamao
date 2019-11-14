@@ -19,14 +19,13 @@ var serviceRouter = require('./routes/service');
 /*********************************服务产品路由**************************************/
 var socialResRouter = require('./routes/socialRes');
 var talentsRouter = require('./routes/talents');
-
-
 var employeeGrowRouter = require('./routes/employeeGrow');
 var employeeNotesRouter = require('./routes/employeeNotes');
 var honestBusinessRouter = require('./routes/honestBusiness');
 var publicNoticeRouter = require('./routes/publicNotice');
 var teamRouter = require('./routes/team');
-
+var valueRouter = require('./routes/value');
+var contactRouter= require('./routes/contact');
 
 var app = express();
 
@@ -61,6 +60,8 @@ app.use('/employeeNotes', employeeNotesRouter);
 app.use('/honestBusiness', honestBusinessRouter);
 app.use('/publicNotice', publicNoticeRouter);
 app.use('/team', teamRouter);
+app.use('/value', valueRouter);
+app.use('/contact', contactRouter);
 
 /*********************************服务产品**************************************/
 // catch 404 and forward to error handler
