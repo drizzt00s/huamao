@@ -15,12 +15,17 @@ var about5Router = require('./routes/about5');
 var about6Router = require('./routes/about6');
 /*********************************关于华贸路由**************************************/
 
-
-
-
 var serviceRouter = require('./routes/service');
 /*********************************服务产品路由**************************************/
+var socialResRouter = require('./routes/socialRes');
+var talentsRouter = require('./routes/talents');
 
+
+var employeeGrowRouter = require('./routes/employeeGrow');
+var employeeNotesRouter = require('./routes/employeeNotes');
+var honestBusinessRouter = require('./routes/honestBusiness');
+var publicNoticeRouter = require('./routes/publicNotice');
+var teamRouter = require('./routes/team');
 
 
 var app = express();
@@ -36,6 +41,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+
 app.use('/users', usersRouter);
 /************************************首页***********************************/
 app.use('/about', aboutRouter);
@@ -45,12 +51,16 @@ app.use('/about4', about4Router);
 app.use('/about5', about5Router);
 app.use('/about6', about6Router);
 /*********************************关于华贸**************************************/
-
-
-
-
+app.use('/socialRes', socialResRouter);
+/*********************************社会责任**************************************/
 app.use('/service', serviceRouter);
-
+/*********************************人才战略**************************************/
+app.use('/talents', talentsRouter);
+app.use('/employeeGrow', employeeGrowRouter);
+app.use('/employeeNotes', employeeNotesRouter);
+app.use('/honestBusiness', honestBusinessRouter);
+app.use('/publicNotice', publicNoticeRouter);
+app.use('/team', teamRouter);
 
 /*********************************服务产品**************************************/
 // catch 404 and forward to error handler

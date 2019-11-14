@@ -97,4 +97,66 @@ legend
 .hidden{
 display:none;
 }
+.logo{
+    background-image: url(../images/logoSmall.png);
+    background-repeat:no-repeat;
+    margin-left: -34px;
+    margin-top: 5px;
+    padding-left: 100px;
+    background-position: 0px;
+}
+
+/* CSS Document */
+*{ margin:0; padding:0; outline:none}
+ul, li{list-style-type:none;}
+img{border:0 none;}
+a{text-decoration:none;}
+.clear{ clear:both}
+.hide{ display:none}
+input{ border:0 none;text-indent:5px;}
+body{ font-family:微软雅黑; font-size:12px;min-width:990px; width:expression(document.body.clientWidth <= 990? "990px": "auto");}
+
+
+.xuanfu1{ position:fixed;top:0px;z-index:9999;}
+.header{ width:100%;}
+
+
+
+
+
+
+/*  专区  */
+.zhuanqu{ width:100%; clear:both; margin-top:18px;float: left;}
+.zhuanqu .zhuanqulan{ width:990px; margin:auto}
+.zhuanqu h2{ height:25px}
+.zhuanqu h2 img{ float:left; margin-top:7px}
+.zhuanqu h2 span.zhuanqu_tu1{ background:url(../images/jinglin_2.png) 0px 0px no-repeat; display:block; width:800px; height:25px; float:left;margin-left:5px}
+.zhuanqu h2 span.zhuanqu_tu2{ background:url(../images/jinglin_2.png) 0px -32px no-repeat; display:block; width:800px; height:25px; float:left;margin-left:5px}
+.zhuanqu h2 span.zhuanqu_tu3{ background:url(../images/jinglin_2.png) 0px -66px no-repeat; display:block; width:800px; height:25px; float:left;margin-left:5px}
+.zhuanqu h2 span.zhuanqu_tu4{ background:url(../images/jinglin_2.png) 0px -98px no-repeat; display:block; width:800px; height:25px; float:left;margin-left:5px}
+.zhuanqu h2 span.zhuanqu_tu5{ background:url(../images/jinglin_2.png) 0px -132px no-repeat; display:block; width:800px; height:25px; float:left;margin-left:5px}
+.zhuanqu h2 span.zhuanqu_tu6{ background:url(../images/jinglin_2.png) 0px -168px no-repeat; display:block; width:800px; height:25px; float:left;margin-left:5px}
+.zhuanqu h2 span.zhuanqu_tu7{ background:url(../images/jinglin_2.png) 0px -202px no-repeat; display:block; width:800px; height:25px; float:left;margin-left:5px}
+.zhuanqu .hengxian{height:16px;}
+.zhuanqu .zhuanqulan .zhuti{ overflow:hidden; background:#eeeeee; padding-bottom:10px}
+.zhuanqu .zhuanqulan .zhuti .zhuanqulan_left{ width:258px; float:left}
+.zhuanqu .zhuanqulan .zhuti .zhuanqulan_left .zhuanqulan_zi{ width:215px; margin-top:26px; margin-left:20px;color:#505050; line-height:23px;}
+.zhuanqu .zhuanqulan .zhuti .zhuanqulan_right{ float:right;}
+.zhuanqu .zhuanqulan .zhuti .zhuanqulan_right .fenlan{ text-align:right; overflow:hidden; margin-top:10px; padding-right:10px}
+.zhuanqu .zhuanqulan .zhuti .zhuanqulan_right .fenlan li{ float:right;}
+.zhuanqu .zhuanqulan .zhuti .zhuanqulan_right .fenlan li a{ display:block; color:#383838; font-size:13px}
+.zhuanqu .zhuanqulan .zhuti .zhuanqulan_right .fenlan li:hover a{color:red}
+
+.mainWrap{
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
 

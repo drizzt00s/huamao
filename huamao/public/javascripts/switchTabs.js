@@ -6,14 +6,10 @@ function getCurrentTabIndex(){
 }
 
 function switchTabs(i){
-
 	if(!i || i == 1){
 		i = 1;
 	}
 	i = i -1;
-	console.log("!!!!!");
-	console.log(i);
-	
 	if($(".switchTables").eq(i).hasClass("hidden")){
 		$(".switchTables").eq(i).removeClass("hidden");
 		$(".switchTables").eq(i).siblings(".switchTables").addClass("hidden");
