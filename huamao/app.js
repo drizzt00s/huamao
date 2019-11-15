@@ -13,7 +13,7 @@ var about3Router = require('./routes/about3');
 var about4Router = require('./routes/about4');
 var about5Router = require('./routes/about5');
 var about6Router = require('./routes/about6');
-/*********************************关于华贸路由**************************************/
+/*********************************关于空跃路由**************************************/
 
 var serviceRouter = require('./routes/service');
 /*********************************服务产品路由**************************************/
@@ -49,7 +49,7 @@ app.use('/about3', about3Router);
 app.use('/about4', about4Router);
 app.use('/about5', about5Router);
 app.use('/about6', about6Router);
-/*********************************关于华贸**************************************/
+/*********************************关于空跃**************************************/
 app.use('/socialRes', socialResRouter);
 /*********************************社会责任**************************************/
 app.use('/service', serviceRouter);

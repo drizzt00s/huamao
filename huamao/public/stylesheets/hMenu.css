@@ -1,6 +1,6 @@
 ﻿/******Menu common styling */
 /* style the outer div to give it width */
-.menu {font-size:12px; width:950px; position:relative; z-index:1000;}
+.menu {font-size:14px; width:950px; position:relative; z-index:1000;}
 
 /* remove all the bullets, borders and padding from the default list styling */
 .menu ul {padding:0;margin:0;list-style-type:none; height:36px; background:transparent;}
@@ -30,7 +30,7 @@
 .menu ul ul li {display:block;width:12em;height:auto; line-height:1em;}
 
 /* style the links for the top level 一级菜单宽度 左右边框线会显示到子菜单的左右表格式上 */
-.menu a, .menu a:visited {display:block;float:left;height:100%; width:6em; font-size:1em;text-decoration:none;color:#333333; padding:0 12px 0 12px; border-left:1px solid #fff; border-right:1px solid #ccc;}
+.menu a, .menu a:visited {display:block;float:left;height:100%; width:6em; font-size:14px;text-decoration:none;color:#333333; padding:0 12px 0 12px; border-left:1px solid #fff; border-right:1px solid #ccc;}
 /* hack IE5.x to get the correct the faulty box model and get the width right */
 * html .menu a, * html .menu a:visited {width:5em;}
 
@@ -51,7 +51,7 @@
 
 
 /* style the table so that it takes no part in the layout - required for IE to work */
-.menu table {border-collapse:collapse; padding:0; margin:-1px; width:0; height:0; font-size:1em; z-index:100;}
+.menu table {border-collapse:collapse; padding:0; margin:-1px; width:0; height:0; font-size:14px; z-index:100;}
 
 
 /* style the third level background 三级菜单背景 */
