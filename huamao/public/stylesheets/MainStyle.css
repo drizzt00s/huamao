@@ -214,7 +214,11 @@ border-bottom:1px dotted #d5d5d5;
     margin-bottom:15px;
 }
 .serFooter{
+    text-indent:10px;
+}
 
+.pd2{
+    padding-left:10px;
 }
 /* CSS Document */
 .content .zhuti .zhuti_left .fenlei li a.ad{ color: #d90000;
